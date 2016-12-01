@@ -15,11 +15,11 @@ function enterKeyPressed (e) {
 function makeTree () {
     // 1. Get reference to tree height from user input & log to console
     var treeHeight = document.getElementById('heightInput').value;
-    console.log(treeHeight);
+    // console.log(treeHeight);
 
     // 1. Get reference to character to make tree & log to console
     var chara = document.getElementById('charInput').value;
-    console.log(chara);
+    // console.log(chara);
 
     // if either field is blank display alert
     if (treeHeight === "" || chara === "") {
@@ -27,6 +27,11 @@ function makeTree () {
     }
 
     // for loop to get tree (hopefully)
+    for (var i = 0; i < treeHeight; i++) {
+        var x = (2*i)+1;
+        var xTimes = chara.repeat(x);
+        console.log(xTimes);
+    }
 }
 
 
