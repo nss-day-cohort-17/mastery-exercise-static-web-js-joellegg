@@ -15,11 +15,9 @@ function enterKeyPressed (e) {
 function makeTree () {
     // 1. Get reference to tree height from user input & log to console
     var treeHeight = document.getElementById('heightInput').value;
-    // console.log(treeHeight);
 
     // 1. Get reference to character to make tree & log to console
     var chara = document.getElementById('charInput').value;
-    // console.log(chara);
 
     // if either field is blank display alert
     if (treeHeight === "" || chara === "") {
@@ -35,7 +33,6 @@ function makeTree () {
         console.log(spaces + xTimes);
     }
 }
-
 
 // 3. Call function to run on button click with event listener
 growButton.addEventListener('click', makeTree);
