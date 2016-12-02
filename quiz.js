@@ -29,8 +29,10 @@ function makeTree () {
     // for loop to get tree (hopefully)
     for (var i = 0; i < treeHeight; i++) {
         var x = (2*i)+1;
+        var y = (treeHeight - i);
+        var spaces = " ".repeat(y);
         var xTimes = chara.repeat(x);
-        console.log(xTimes);
+        console.log(spaces + xTimes);
     }
 }
 
